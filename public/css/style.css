@@ -124,6 +124,8 @@ h1.h-bold,h2.h-bold,h3.h-bold ,h4.h-bold ,h5.h-bold ,h6.h-bold  {
 
 h1.h-ultra,h2.h-ultra,h3.h-ultra ,h4.h-ultra ,h5.h-ultra ,h6.h-ultra  {
 	font-weight: 900;
+  font-size: 25px;
+  font: bold;
 }
 
 
@@ -761,7 +763,7 @@ hr.bold {
 }
 
 .intro-content {
-	background: url(../img/incohidra/slides/fondo.png) no-repeat top center;
+	background: url(../img/incohidra/slides/fondo.jpg) no-repeat top center;
 	padding:200px 0 60px;
 }
 .intro-content.intro-nobg {
@@ -797,7 +799,7 @@ ul.lead-list {
 
 
 ul.lead-list li {
-	margin: 0 0 20px 0;
+	margin: 0 0 15px 0;
 	line-height: 1.6em;
 }
 
