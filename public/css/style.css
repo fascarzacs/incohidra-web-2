@@ -7,6 +7,7 @@
 
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800|Roboto:400,500,700,900');
+@import url('overwrite.css');
 /* --- pe-icon-7-stroke --- */
 
 
@@ -766,6 +767,12 @@ hr.bold {
 	background: url(../img/incohidra/slides/fondo.jpg) no-repeat top center;
 	padding:200px 0 60px;
 }
+
+.intro-content-nosotros {
+	background: url(../img/incohidra/slides/fondo_bkp.png) no-repeat top center;
+	padding:200px 0 60px;
+}
+
 .intro-content.intro-nobg {
 	background:#fff;
 	position:relative;
