@@ -2097,3 +2097,14 @@ a.btn:focus{
 		padding:250px 0 0;
 	}
 }
+
+.wrapperTextCenter{
+    display:table;
+}
+
+.innerTextCenter{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    font-size:13px;
+}
