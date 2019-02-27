@@ -28,7 +28,7 @@
     }
   });
 
-	var navMain = $(".navbar-collapse"); 
+	var navMain = $(".navbar-collapse");
 	navMain.on("click", "a:not([data-toggle])", null, function () {
 	   navMain.collapse('hide');
 	});
@@ -71,7 +71,124 @@
   });
 
   //owl carousel
-  $('#owl-works').owlCarousel({
+  $('#owl-works1').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works2').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works3').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works4').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works5').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works6').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works7').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works8').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works9').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works10').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works11').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works12').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works13').owlCarousel({
+    items: 4,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [980, 5],
+    itemsTablet: [768, 5],
+    itemsTabletSmall: [550, 2],
+    itemsMobile: [480, 2],
+  });
+
+  $('#owl-works14').owlCarousel({
     items: 4,
     itemsDesktop: [1199, 5],
     itemsDesktopSmall: [980, 5],
