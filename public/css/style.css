@@ -769,7 +769,7 @@ hr.bold {
 }
 
 .intro-content-nosotros {
-	background: url(../img/incohidra/slides/fondo_bkp.png) no-repeat top center;
+	background: url(../img/incohidra/slides/fondo_new.jpg) no-repeat top center;
 	padding:200px 0 60px;
 }
 
@@ -1354,7 +1354,7 @@ footer .sub-footer  p {
 	color: #4765a0;
 }
 .icon-success {
-	color: #7db53b;
+	color: #FE0000;
 }
 .icon-info {
 	color: #51b6bf;

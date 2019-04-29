@@ -240,8 +240,71 @@
     var gridContainer = $('#grid-container'),
       filtersContainer = $('#filters-container');
 
+      var gridContainer2 = $('#grid-container2'),
+        filtersContainer2 = $('#filters-container2');
+
     // init cubeportfolio
     gridContainer.cubeportfolio({
+
+      defaultFilter: '*',
+
+      animationType: 'sequentially',
+
+      gapHorizontal: 50,
+
+      gapVertical: 40,
+
+      gridAdjustment: 'responsive',
+
+      caption: 'fadeIn',
+
+      displayType: 'lazyLoading',
+
+      displayTypeSpeed: 100,
+
+      // lightbox
+      lightboxDelegate: '.cbp-lightbox',
+      lightboxGallery: true,
+      lightboxTitleSrc: 'data-title',
+      lightboxShowCounter: true,
+
+      // singlePage popup
+      singlePageDelegate: '.cbp-singlePage',
+      singlePageDeeplinking: true,
+      singlePageStickyNavigation: true,
+      singlePageShowCounter: true,
+      singlePageCallback: function(url, element) {
+
+        // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+        var t = this;
+
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'html',
+            timeout: 5000
+          })
+          .done(function(result) {
+            t.updateSinglePage(result);
+          })
+          .fail(function() {
+            t.updateSinglePage("Error! Please refresh the page!");
+          });
+
+      },
+
+      // singlePageInline
+      singlePageInlineDelegate: '.cbp-singlePageInline',
+      singlePageInlinePosition: 'above',
+      singlePageInlineShowCounter: true,
+      singlePageInlineInFocus: true,
+      singlePageInlineCallback: function(url, element) {
+        // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
+      }
+    });
+
+    // init cubeportfolio
+    gridContainer2.cubeportfolio({
 
       defaultFilter: '*',
 
@@ -328,8 +391,38 @@
 
     });
 
+    // add listener for filters click
+    filtersContainer2.on('click', '.cbp-filter-item', function(e) {
+
+      var me = $(this),
+        wrap;
+
+      // get cubeportfolio data and check if is still animating (reposition) the items.
+      if (!$.data(gridContainer[0], 'cubeportfolio').isAnimating) {
+
+        if (filtersContainer.hasClass('cbp-l-filters-dropdown')) {
+          wrap = $('.cbp-l-filters-dropdownWrap');
+
+          wrap.find('.cbp-filter-item').removeClass('cbp-filter-item-active');
+
+          wrap.find('.cbp-l-filters-dropdownHeader').text(me.text());
+
+          me.addClass('cbp-filter-item-active');
+        } else {
+          me.addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
+        }
+
+      }
+
+      // filter the items
+      gridContainer.cubeportfolio('filter', me.data('filter'), function() {});
+      gridContainer2.cubeportfolio('filter', me.data('filter'), function() {});
+
+    });
+
     // activate counter for filters
     gridContainer.cubeportfolio('showCounter', filtersContainer.find('.cbp-filter-item'));
+    gridContainer2.cubeportfolio('showCounter', filtersContainer2.find('.cbp-filter-item'));
 
   })(jQuery, window, document);
 
